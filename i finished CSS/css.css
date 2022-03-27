@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#background1 {
+	background: linear-gradient(200deg, rgb(0, 121, 191) 40%, rgb(255, 255, 255) 80%);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+}
+
+#background2 {
+	background: linear-gradient(160deg, rgb(0, 121, 191) 40%, rgb(255, 255, 255) 80%);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+
+	animation-name: colorChange;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#body {
+	position: fixed;
+	
+	animation-name: slideIn;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-out;
+}
+
+h2 {
+	font-weight: bold;
+	color: rgb(0, 121, 191);
+	background: rgb(255, 255, 255);
+}
+
+p {
+	background-color: rgb(121, 191, 0);
+	font-style: italic;
+	padding: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+@keyframes colorChange {
+	from {
+		opacity: 0.0;
+	}
+
+	to {
+		opacity: 1.0;
+	}
+}
+
+
+@keyframes slideIn {
+	from {
+		top: -400px;
+	}
+
+	to {
+		top: 0;
+	}
+}
