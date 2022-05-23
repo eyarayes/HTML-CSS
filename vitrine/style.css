@@ -1,0 +1,143 @@
+/* pour changer le police utiliser googlepolice pour choisir */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');/*style lmenu */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display+SC:ital@1&display=swap'); /*style titre*/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');/*style contenu des cardes*/
+body{
+    margin: 0; /* marges exterieures de l element*/
+    padding: 0; /* marges interieures de l élement */
+    font-family:'Montserrat' , sans-serif ;/*pour modifier la police du corp */
+}
+/*barre de navigation */
+nav{
+    display: flex; /*pour aligner les elements*/
+    flex-wrap: wrap; /*ampiler au format mobile*/
+    justify-content: center; /*centrer les elements */
+    align-items: center; /*les elements centrés et au meme niveau */
+    border-bottom: 5px solid #32CD32; /*bordure de la barre de navigation */  
+}
+/* le titre */
+nav h1{
+    color:#FF0000;
+    font-family:'Playfair Display SC:ital@1&display', sans-serif ;/* sans-serif par defaut */
+    font-size: 30px;
+}
+/* nav onglets proncipal */
+nav .onglets{
+    margin-top: 3px; /*aligner lien avec titre */
+    margin-left:300px ; /* eloigner titre de lien */
+}
+/* les onglets */
+nav .onglets a{ /* a : tous les liens qui se trouvenets a l interieur d ela div */
+    text-decoration: none; /* enlever le soulignement par defaut */
+    color:#FFD700;
+    margin-right:10px ; /* marge entre les liens */
+    border-bottom:1px solid #7FFF00; /* couleur du underline qu texte */
+    padding-bottom: 5px ; /*marge en bas de 5px */
+}
+/*le header lkoll*/
+header{
+    display:flex; /* aligner les elements */
+    flex-direction:column; /* ampiler les elements */
+    align-items: center; /* centrer les elements au niveau de header */
+    background: url('logo.png'); /*image de header */
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    color:#7FFF00;
+    padding :10px;
+}
+/*header 1 */
+header h1{
+    font-size: 40px ;
+    font-family:'Playfair Display SC:ital@1&display', sans-serif ;
+}
+/*header 4 */
+header h4{
+    margin-top: -20px; /*yna9as l espace bin h1 w h4 */
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #8B4513;
+}
+/*style bouton */
+header button{
+    padding:10px 20px;/*marge haut et bas 10 droite et gauche 20*/
+    background-color: #FFFF00; /*couleur l bouton */
+    color:#CD853F; /*couleur l texte de bouton */
+    border:none;/* enlever bordure autour du bouton */
+    font-size:20px;/*taille du boutton */
+    outline: none; /*yne7i l effet rouge ki ncliki aal bouton */
+    cursor: pointer; /*lcurseur ywali pointeur fou9 l boutton */
+    font-family:'Playfair Display SC:ital@1&display', sans-serif ;
+}
+/*section principale */
+.main{
+    margin-top: 40px; /* espacer header et main*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card{
+    
+    direction: rtl; /*direction lktiba mel lymin lel ysar*/
+    display: flex;
+    flex-wrap: wrap; /* empiler elements pour format mobile */
+    justify-content: center;
+    margin-bottom:20px;/*espacer  les cartes */
+}
+/* centenu de la carte */
+.main .content .card .left{
+   flex: 0 0 30%; /* partie gauche asghar */
+   padding: 20px; /*marge interieure */
+   background-color:#FFFFE0;/* backgrounf arrereplan */
+   color:#0000FF;/*couleur de texte */
+   font-family:'El Messiri&display' ;
+}
+.main .content .card.right{
+    flex:0 0 70%;
+}
+/*remodifier taille images*/
+.main .content .card .right img{
+    height:300px;
+    width:400px;
+    margin-top: 5px; /* espace entre img et texte */
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;
+  }
+  footer h1 {
+    font-family: "Playfair Display", serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+  }
+  footer .services {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .services .service {
+    margin-right: 30px;
+  }
+  footer .services .service p {
+    max-width: 300px;
+  }
+  footer #contact {
+    color: rgb(181, 181, 181);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
